@@ -9,6 +9,8 @@ import { HealthAndWellBeingComponent } from './components/health-and-well-being/
 import { TariffsComponent } from './components/tariffs/tariffs.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+import { SummaryComponent } from './shared/summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     HealthAndWellBeingComponent,
     TariffsComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,

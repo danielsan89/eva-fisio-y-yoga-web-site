@@ -1,0 +1,27 @@
+<nav *ngIf="summaries.length > 1" id="navbar-example2" class="navbar navbar-light bg-light px-3">
+  <ul class="nav nav-pills">
+    <ng-container *ngFor="let summary of summaries; let i = index">
+      <li class="nav-item">
+        <a class="nav-link" [href]="'#' +  summary.title + i">First</a>
+      </li>
+    </ng-container>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <ng-container *ngFor="let summary of summaries; let i = index">
+    <h4 [id]="summary.title + i">{{ summary.title }}</h4>
+    <p>{{ summary.text }}</p>
+  </ng-container>
+</div>
