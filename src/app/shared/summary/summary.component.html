@@ -1,4 +1,4 @@
-<nav *ngIf="summaries.length > 1" id="navbar-example2" class="navbar navbar-light bg-light px-3">
+<nav *ngIf="summaries.length > 1" id="navbar-example2" class="navbar px-3">
   <ul class="nav nav-pills">
     <ng-container *ngFor="let summary of summaries; let i = index">
       <li class="nav-item">
@@ -20,8 +20,8 @@
   </ul>
 </nav>
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-  <ng-container *ngFor="let summary of summaries; let i = index">
-    <h4 [id]="summary.title + i">{{ summary.title }}</h4>
-    <p>{{ summary.text }}</p>
+  <ng-container  *ngFor="let summary of summaries; let i = index">
+    <h4 class="regular-text"[id]="summary.title + i">{{ summary.title }}</h4>
+    <p class="regular-text">{{ summary.text }}</p>
   </ng-container>
 </div>

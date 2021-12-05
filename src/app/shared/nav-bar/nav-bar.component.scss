@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.nav,
+.navbar-brand {
+  font-size: 35px;
+  font-family: "Kenia", cursive;
+  color: $vampireBlack;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}
+
+.navbar {
+  background-color: $beige;
+  // border-bottom: 1px solid $vampireBlack;
+}
+
+.nav-link {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: $vampireBlack;
+}
